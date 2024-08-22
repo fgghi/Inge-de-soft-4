@@ -1,4 +1,8 @@
 function generarFizzBuzz(numero){
+  if(numero % 3 == 0&&numero % 5 == 0)
+  {
+    numero="FizzBuzz"
+  }
   if (numero==3||numero % 3 == 0)
     {
       numero="Fizz";
