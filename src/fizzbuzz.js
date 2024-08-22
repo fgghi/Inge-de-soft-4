@@ -12,5 +12,14 @@ function generarFizzBuzz(numero){
       numero="Buzz";
     }    
   return numero+"";
+}
+function generarCadenaFizzBuzz(max){
+  let element=[];
+  for (let index = 1; index <= max; index++) {
+    
+    element.push(generarFizzBuzz(index));
   }
-export default generarFizzBuzz;
+  return element;
+  }
+export { generarFizzBuzz, generarCadenaFizzBuzz };
+

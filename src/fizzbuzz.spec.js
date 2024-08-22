@@ -1,4 +1,4 @@
-import generarFizzBuzz from "./fizzbuzz.js";
+import { generarFizzBuzz, generarCadenaFizzBuzz } from "./fizzbuzz.js";
 
 describe("FizzBuzz", () => {
   it("generar el mismo numero si no sigue ninguna regla", () => {
@@ -18,6 +18,9 @@ describe("FizzBuzz", () => {
   });
   it("generar FizzBuzz para multiplo de 5 y 3", () => {
     expect(generarFizzBuzz(15)).toEqual("FizzBuzz");
+  });
+  it("generar cadena", () => {
+    expect(generarCadenaFizzBuzz(10)).toEqual(["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]);
   });
 });
 
